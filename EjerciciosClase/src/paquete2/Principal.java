@@ -16,7 +16,24 @@ public class Principal {
         /*Un objeto de tipo InstitucionEducativa*/
         
         InstitucionEducativa i1 = new InstitucionEducativa();
+        String nombre = "Unidad Educativa Calasanz";
+        String tipoInstitucion = "Fiscomisional";
+        int numeroAlumnos = 2080;
+        int numeroDocentes = 50;
+        int numeroSedes = 3;
         
-        // System.out.printf("%s     ", i1.);
+        //Asignar los valores al objeto
+        i1.establecerNombre(nombre);
+        i1.establecerTipoInstitucion(tipoInstitucion);
+        i1.establecerNumeroAlumnos(numeroAlumnos);
+        i1.establecerNumeroDocentes(numeroDocentes);
+        i1.establecerNumeroSedes(numeroSedes);
+        
+        //Mostrar por pantalla
+        System.out.printf("INSTITUCION EDUCATIVA\n\nNombre: %s\n"
+                + "Tipo de Institucion: %s\nN° de Alumnos: %d\n"
+                + "N° de Docentes: %d\nN° de Sedes: %d\n", i1.obtenerNombre(), 
+                i1.obtenerTipoInstitucion(), i1.obtenerNumeroAlumnos(),
+                i1.obtenerNumeroDocentes(), i1.obtenerNumeroSedes());
     }
 }
