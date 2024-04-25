@@ -20,10 +20,16 @@ public class Ejecutable02 {
         h1.establecerNombre("Vaca Ortíz");
         h2.establecerNombre("Militar");
         h3.establecerNombre("Manuel IM");
+        /*
+        El system.out.printf esta imprimiendo los valores que se han asignado
+        en los atributos, sin embargo, aunque solo se le dió valor al atributo
+        Nombre, por default, el resto de atributos numéricos se imprimen en 0
+        (en caso de entero) y 0,00 (en caso de double)
         
+        */
         System.out.printf("%s - %d - %.2f\n", h1.obtenerNombre(),
                 h1.obtenerNumeroCamas(), h1.obtenerPresupuesto());
-        
+        /*
         h1.establecerNombre("Hospital Vaca Ortíz");
         
         System.out.printf("%s - %d - %.2f\n", h1.obtenerNombre(),
@@ -33,7 +39,7 @@ public class Ejecutable02 {
         
         System.out.printf("%s - %d - %.2f\n", h2.obtenerNombre(),
                 h2.obtenerNumeroCamas(), h2.obtenerPresupuesto());
-        
+        */
         
     }
 }
